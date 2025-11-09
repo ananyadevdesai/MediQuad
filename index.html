@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MediQuad : A compact modular quadruped robot for healthcare assistance and patient monitoring</title>
+  <meta name="description" content="MediQuad – open-source healthcare robotics project">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='black'/><circle cx='50' cy='50' r='36' fill='%239AE6B4'/></svg>">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/MediQuad/">Medi<em>Quad</em></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="vision.html">Design</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle btn" aria-label="Toggle menu">Menu</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">Open-source healthcare robotics</div>
+      <h1 class="h1">MediQuad : A compact modular quadruped robot for healthcare assistance and patient monitoring</h1>
+      <p class="lead">This site documents the MediQuad project: design decisions, parts lists, build steps, references, and discussion. Everything here is intended to help others understand, reproduce, and improve healthcare robotics.</p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="about.html">Project Overview</a>
+      </div>
+
+      <div class="hero-grid" style="margin-top: 28px;">
+
+        <article class="hero-body">
+          <div class="gallery">
+            <img alt="MediQuad printed parts" src="assets/MediQuad-1.jpeg">
+            <img alt="MediQuad assembly layout" src="assets/MediQuad-2.jpeg">
+            <img alt="MediQuad CAD side view" src="assets/MediQuad-3.jpeg">
+            <img alt="MediQuad CAD front" src="assets/MediQuad-4.jpeg">
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> MediQuad</div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

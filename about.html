@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MediQuad : A compact modular quadruped robot for healthcare assistance and patient monitoring</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/MediQuad/">Medi<em>Quad</em></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="vision.html">Design</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle btn" aria-label="Toggle menu">Menu</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="padding-top:56px">
+      <h1 class="h1">Project Overview</h1>
+
+      <div class="card" style="margin-top:24px">
+        <h2 class="section-title">What is MediQuad?</h2>
+        <p>MediQuad is a compact modular quadruped robot designed specifically for healthcare environments, capable of autonomous navigation, patient monitoring, and medical supply delivery. Unlike traditional wheeled robots which struggle with stairs and obstacles, MediQuad uses advanced reinforcement learning-trained AI locomotion controllers to navigate complex hospital environments naturally. The robot features an integrated sensor suite including depth cameras for obstacle avoidance, thermal imaging for patient temperature screening, and voice interaction capabilities for patient communication. Built on a modular architecture with 12 independent servo motors (3 per leg) controlled through a centralized Raspberry Pi 5 processor via CAN bus communication, MediQuad enables precise movement coordination essential for safe operation near patients and medical equipment. A fully assembled MediQuad costs approximately $2,000 USD when sourced from individual components, making it an accessible platform for healthcare robotics research, hospital automation pilots, and medical education programs.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> MediQuad</div>
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
